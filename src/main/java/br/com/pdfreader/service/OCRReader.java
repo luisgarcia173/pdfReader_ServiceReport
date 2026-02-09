@@ -27,7 +27,7 @@ public class OCRReader {
   private String extractDataFromImage(String pdfName) throws TesseractException {
     // Tesseract config
     ITesseract tesseract = new Tesseract();
-    tesseract.setDatapath("D:\\Tesseract-OCR\\tessdata");
+    tesseract.setDatapath("/usr/share/tesseract-ocr/5/tessdata");
     tesseract.setLanguage("eng");
 
     // Process file
